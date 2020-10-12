@@ -16,7 +16,7 @@ showは未実装
 
 ### Gem
 
-- google-cloud-storage ~> 0.20.0
+- google-cloud-storage ~> 1.8
 
 ## How to upload files
 
