@@ -19,8 +19,8 @@ local:
 google:
   service: GCS
   project: achilles-demo
-  credentials: <%= Rails.root.join("path/to/gcs.keyfile") %>
-  bucket: your_own_bucket
+  credentials: <%= Rails.application.credentials.gcskey.to_json %>
+  bucket: acst-bucket
 
 # Use rails credentials:edit to set the Azure Storage secret (as azure_storage:storage_access_key)
 # microsoft:

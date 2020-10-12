@@ -26,6 +26,12 @@ showは未実装
 
 /storage/tx/wk に保存される
 
+### GCS
+
+<https://console.cloud.google.com/storage/browser/acst-bucket;tab=objects?forceOnBucketsSortingFiltering=false&project=achilles-demo&prefix=&forceOnObjectsSortingFiltering=false>
+
+achilles-demoのacst-bucket
+
 ## TODO
 
 - [ ] リネーム
