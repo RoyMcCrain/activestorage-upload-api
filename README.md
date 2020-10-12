@@ -34,7 +34,7 @@ achilles-demoのacst-bucket
 
 ## TODO
 
+- [x] 1Report複数画像
 - [ ] リネーム
 - [ ] リサイズ
-- [ ] GraphQL APIとの連携
 - [ ] Spec
