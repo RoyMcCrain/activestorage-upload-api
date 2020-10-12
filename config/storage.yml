@@ -15,7 +15,6 @@ local:
 #   bucket: your_own_bucket
 
 # Remember not to checkin your GCS keyfile to a repository
-# TODO: #1 Set up GCS
 google:
   service: GCS
   project: achilles-demo
