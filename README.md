@@ -1,2 +1,13 @@
-# activestorage-upload-api
-画像アップロードAPI（ActiveStorage）
+# README
+
+## Documentation
+
+### Model
+
+### Routes
+
+### Gem
+
+## How to upload files
+
+## TODO
