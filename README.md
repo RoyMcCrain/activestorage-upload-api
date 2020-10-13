@@ -35,6 +35,9 @@ achilles-demoのacst-bucket
 ## TODO
 
 - [x] 1Report複数画像
+- [ ] 複数画像の同時アップロード
+- [ ] MutationでDB関連付けができるような返り値を作る
 - [ ] リネーム
 - [ ] リサイズ
+- [ ] バリデーション
 - [ ] Spec
