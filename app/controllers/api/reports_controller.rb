@@ -1,20 +1,22 @@
 module Api
   class ReportsController < ApplicationController
     def create
-      @report = Report.create!(message_params)
+      report = Report.create!(report_params)
       render json: {
-        report: {
-          memo: @report.memo,
-          pic:  @report.pic,
-        },
-        status: 200,
+        memo: report.memo,
+        order: report.order,
       }
+    end
+
+    def update
+      report = Report.find_by(id: params[:id])
+      report.attach(images)
     end
 
     private
 
-    def message_params
-      params.require(:report).permit(:memo, :pic, :images)
+    def report_params
+      params.permit(:memo, :order, images: [])
     end
   end
 end

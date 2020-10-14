@@ -58,3 +58,5 @@ log/development.log
 .vscode/settings.json
 
 master.key
+
+/storage/
