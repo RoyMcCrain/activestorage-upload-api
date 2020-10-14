@@ -4,7 +4,7 @@
 
 ### Model
 
-- reports memo:string, pic:string
+- reports memo:string, pic:string, order:integer
 - ActiveStorage::attachments
 - ActiveStorage::blobs
 
