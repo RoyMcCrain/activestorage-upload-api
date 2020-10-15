@@ -22,7 +22,7 @@ showは未実装
 
 `$ bundle exec rails server`
 
-`$ curl localhost:3000/api/reports/create -F "report[images]=@test_mini.jpg" -F "memo=inu"`
+`$ curl -F 'memo=memo' -F 'order=1' -F 'images[]=@test_fire.jpg' -F 'images[]=@test_mini.jpg' -F 'order=1' localhost:3000/api/images/upload`
 
 /storage/tx/wk に保存される
 
@@ -31,6 +31,14 @@ showは未実装
 <https://console.cloud.google.com/storage/browser/acst-bucket;tab=objects?forceOnBucketsSortingFiltering=false&project=achilles-demo&prefix=&forceOnObjectsSortingFiltering=false>
 
 achilles-demoのacst-bucket
+
+### ConoHa
+
+<https://manage.conoha.jp/Dashboard/>
+
+Image-1234 <http://160.251.15.106/>
+
+user:image1234
 
 ## TODO
 
