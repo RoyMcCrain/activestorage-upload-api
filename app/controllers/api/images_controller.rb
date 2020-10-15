@@ -1,6 +1,7 @@
 module Api
   class ImagesController < ApplicationController
     def upload
+      puts "---------------- Uploading ----------------"
       validate_gcs
       report = Report.find_by(id: params[:order])
       rename_image(params[:images])
@@ -16,6 +17,7 @@ module Api
           error: "Report not found",
         }
       end
+      puts "---------------- Uploaded!!!!! ----------------"
     end
 
     private
