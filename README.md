@@ -10,7 +10,7 @@
 
 ### Routes
 
-- /api/reports/create
+- /api/images/upload
 
 showは未実装
 
