@@ -60,3 +60,4 @@ log/development.log
 master.key
 
 /storage/
+log/capistrano.log
