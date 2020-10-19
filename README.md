@@ -4,7 +4,7 @@
 
 ### Model
 
-- reports memo:string, pic:string, order:integer
+- image_log uploaded_at:datetime
 - ActiveStorage::attachments
 - ActiveStorage::blobs
 
@@ -32,8 +32,6 @@ images[]=@ファイルパス.jpg
 {"url":["https://storage.cloud.google.com/acst-bucket/yqgnqrc1fc01u8ci5bkmkk14dlmd","https://storage.cloud.google.com/acst-bucket/16t2an2vaponp8bnl0146czwjpo5"]}
 ~~~
 
-/storage/tx/wk に保存される
-
 ### GCS
 
 <https://console.cloud.google.com/storage/browser/acst-bucket;tab=objects?forceOnBucketsSortingFiltering=false&project=achilles-demo&prefix=&forceOnObjectsSortingFiltering=false>
@@ -52,8 +50,7 @@ user:image1234
 
 - [x] 1Report複数画像
 - [x] 複数画像の同時アップロード
-- [ ] MutationでDB関連付けができるような返り値を作る
 - [x] リネーム
 - [ ] リサイズ
 - [ ] バリデーション
-- [ ] Spec（Gemいれるとこから）
+- [ ] Spec
