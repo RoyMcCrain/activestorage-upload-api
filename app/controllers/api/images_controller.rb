@@ -2,29 +2,14 @@ module Api
   class ImagesController < ApplicationController
     def upload
       puts "---------------- Uploading ----------------"
-      validate_gcs
-      report = Report.find_by(id: params[:order])
+      image_log = ImageLog.create!(uploaded_at: Time.zone.now)
       rename_image(params[:images])
-      if report.present?
-        report.images.attach(params[:images])
-        render json: {
-          memo:   report.memo,
-          order:  report.order,
-          images: [report.images],
-        }
-      else
-        render json: {
-          error: "Report not found",
-        }
-      end
+      image_log.images.attach(params[:images])
+      render json: { url: image_log.image_url }
       puts "---------------- Uploaded!!!!! ----------------"
     end
 
     private
-
-    def report_params
-      params.permit(:memo, :order, images: [])
-    end
 
     def rename_image(images)
       images.each do |image|
