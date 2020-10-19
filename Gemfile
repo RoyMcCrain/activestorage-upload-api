@@ -30,6 +30,9 @@ gem "google-cloud-storage", "~> 1.8", require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "rspec-rails", "~> 3.8"
+  gem "rspec-power_assert"
+  gem "simplecov"
 end
 
 gem "rails-erd"
@@ -41,6 +44,9 @@ group :development do
   gem "rubocop"
   gem "rubocop-performance"
   gem "rubocop-rails"
+  gem "guard"
+  gem "guard-rspec", require: false
+  gem "guard-brakeman"
   # capistrano
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rbenv", "~> 2.2", require: false
