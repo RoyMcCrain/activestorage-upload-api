@@ -61,3 +61,5 @@ master.key
 
 /storage/
 log/capistrano.log
+debug.log
+erd.pdf
