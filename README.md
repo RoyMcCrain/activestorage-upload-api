@@ -22,7 +22,15 @@ showは未実装
 
 `$ bundle exec rails server`
 
-`$ curl -F 'memo=memo' -F 'order=1' -F 'images[]=@test_fire.jpg' -F 'images[]=@test_mini.jpg' -F 'order=1' localhost:3000/api/images/upload`
+`$ curl -F 'images[]=@test_fire.jpg' -F 'images[]=@test_mini.jpg' localhost:3000/api/images/upload`
+
+images[]=@ファイルパス.jpg
+
+返り値サンプル
+
+~~~ json
+{"url":["https://storage.cloud.google.com/acst-bucket/yqgnqrc1fc01u8ci5bkmkk14dlmd","https://storage.cloud.google.com/acst-bucket/16t2an2vaponp8bnl0146czwjpo5"]}
+~~~
 
 /storage/tx/wk に保存される
 
