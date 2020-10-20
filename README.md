@@ -20,6 +20,13 @@ showは未実装
 
 ## How to upload files
 
+`$ bundle exec rails db:create`
+
+`$ bundle exec rails db:migrate`
+
+`$ ETITOR=vi bundle exec rails credentials:edit`
+でcredentialsを設定→これはりつけ
+
 `$ bundle exec rails server`
 
 `$ curl -F 'images[]=@test_fire.jpg' -F 'images[]=@test_mini.jpg' localhost:3000/api/images/upload`
