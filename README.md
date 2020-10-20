@@ -25,7 +25,7 @@ showは未実装
 `$ bundle exec rails db:migrate`
 
 `$ ETITOR=vi bundle exec rails credentials:edit`
-でcredentialsを設定→これはりつけ
+でcredentialsを設定
 
 `$ bundle exec rails server`
 
