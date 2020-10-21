@@ -18,7 +18,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     # install ruby(refer to .ruby-version)
-    - uses: ruby/setup-ruby@v1.32.2
+    - uses: ruby/setup-ruby@v1
     # cache gems
     - uses: actions/cache@v1
       with:
