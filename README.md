@@ -45,7 +45,7 @@ images[]=@ファイルパス.jpg
 
 achilles-demoのacst-bucket
 
-### ConoHa
+### ConoHa（停止中）
 
 <https://manage.conoha.jp/Dashboard/>
 
