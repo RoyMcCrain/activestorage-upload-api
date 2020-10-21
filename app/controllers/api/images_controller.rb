@@ -10,8 +10,9 @@ module Api
     end
 
     def test
-      puts "---------------- テスト中 ----------------"
+      @image =ImageLog.new
     end
+
     private
 
     def rename_image(images)
