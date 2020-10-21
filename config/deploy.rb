@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 
 set :application, "image1234"
 set :repo_url, "git@github.com:hm626/activestorage-upload-api.git"
-set :deploy_to, "/home/image1234/src/image1234"
+set :deploy_to, "/home/image/src/image"
 
 set :rbenv_type, :user
 set :rbenv_ruby, File.read(".ruby-version").strip

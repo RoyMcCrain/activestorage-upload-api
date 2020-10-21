@@ -9,6 +9,9 @@ module Api
       puts "---------------- Uploaded!!!!! ----------------"
     end
 
+    def test
+      puts "---------------- テスト中 ----------------"
+    end
     private
 
     def rename_image(images)

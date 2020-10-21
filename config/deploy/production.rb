@@ -1,5 +1,4 @@
-# ConoHaの外部IP
-server "160.251.15.106", user: "image1234", roles: %w[web app]
+server "104.154.45.239", user: "image", roles: %w[web app]
 set :rails_env, :production
 set :stage, :production
 set :branch, :main
