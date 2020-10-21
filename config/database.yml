@@ -58,6 +58,8 @@ development:
 test:
   <<: *default
   database: activestorage_upload_api_test
+  username: <%= Rails.application.credentials.dig(:db, :test, :username) || "postgres" %>
+  password: <%= Rails.application.credentials.dig(:db, :test, :password) || "postgres" %>
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,5 +83,5 @@ test:
 production:
   <<: *default
   database: activestorage_upload_api_production
-  username: <%= Rails.application.credentials.dig(:db, :prod, :username) || "capistrano" %>
-  password: <%= Rails.application.credentials.dig(:db, :prod, :password) || "capistrano" %>
+  username: <%= Rails.application.credentials.dig(:db, :prod, :username) || "image" %>
+  password: <%= Rails.application.credentials.dig(:db, :prod, :password) || "image" %>
