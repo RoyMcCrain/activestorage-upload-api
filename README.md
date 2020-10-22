@@ -20,6 +20,8 @@ showは未実装
 
 ## How to upload files
 
+### ローカル環境
+
 `$ bundle exec rails db:create`
 
 `$ bundle exec rails db:migrate`
@@ -31,22 +33,23 @@ showは未実装
 
 `$ curl -F 'images[]=@test_fire.jpg' -F 'images[]=@test_mini.jpg' localhost:3000/api/images/upload`
 
-images[]=@ファイルパス.jpg
+＊images[]=@ファイルパス.jpg
 
-返り値サンプル
+### 許可されている拡張子はpng, jpg, jpeg, gifのみ
+
+正常：返り値サンプル
 
 ~~~ json
 {"url":["https://storage.cloud.google.com/acst-bucket/yqgnqrc1fc01u8ci5bkmkk14dlmd","https://storage.cloud.google.com/acst-bucket/16t2an2vaponp8bnl0146czwjpo5"]}
 ~~~
 
-png, jpg, jpeg, gif以外の拡張子のファイルを送るとエラーメッセージが返る
+### それ以外の拡張子を送信するとエラーメッセージ
 
-返り値サンプル
+異常：返り値サンプル
 
 ~~~ json
 {"error":"Invalid extension."}
 ~~~
-
 
 ### GCS
 
