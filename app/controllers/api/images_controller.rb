@@ -1,13 +1,18 @@
 module Api
   class ImagesController < ApplicationController
     def upload
-      puts "---------------- Uploading ----------------"
       ext_validate(params[:images])
       image_log = ImageLog.create!(uploaded_at: Time.zone.now)
       rename_image(params[:images])
       image_log.images.attach(params[:images])
-      render json: { url: image_log.image_url }
-      puts "---------------- Uploaded!!!!! ----------------"
+
+      render json: {
+        url: image_log.image_url,
+      }
+    rescue => e
+      render json: {
+        error: e.message,
+      }
     end
 
     private
