@@ -43,13 +43,5 @@ ActiveRecord::Schema.define(version: 2020_10_19_062045) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "reports", force: :cascade do |t|
-    t.string "memo"
-    t.string "pic"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.integer "order", default: 1, null: false
-  end
-
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end

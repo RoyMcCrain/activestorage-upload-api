@@ -52,12 +52,3 @@ achilles-demoのacst-bucket
 Image-1234 <http://160.251.15.106/>
 
 user:image1234
-
-## TODO
-
-- [x] 1Report複数画像
-- [x] 複数画像の同時アップロード
-- [x] リネーム
-- [ ] リサイズ
-- [ ] バリデーション
-- [ ] Spec
