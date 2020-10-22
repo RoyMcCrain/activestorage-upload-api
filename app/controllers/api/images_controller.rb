@@ -3,7 +3,6 @@ module Api
     def upload
       puts "---------------- Uploading ----------------"
       image_log = ImageLog.create!(uploaded_at: Time.zone.now)
-      binding.irb
       rename_image(params[:images])
       image_log.images.attach(params[:images])
       render json: { url: image_log.image_url }
