@@ -39,6 +39,15 @@ images[]=@ファイルパス.jpg
 {"url":["https://storage.cloud.google.com/acst-bucket/yqgnqrc1fc01u8ci5bkmkk14dlmd","https://storage.cloud.google.com/acst-bucket/16t2an2vaponp8bnl0146czwjpo5"]}
 ~~~
 
+png, jpg, jpeg, gif以外の拡張子のファイルを送るとエラーメッセージが返る
+
+返り値サンプル
+
+~~~ json
+{"error":"Invalid extension."}
+~~~
+
+
 ### GCS
 
 <https://console.cloud.google.com/storage/browser/acst-bucket;tab=objects?forceOnBucketsSortingFiltering=false&project=achilles-demo&prefix=&forceOnObjectsSortingFiltering=false>
