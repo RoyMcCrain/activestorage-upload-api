@@ -10,10 +10,6 @@ module Api
       puts "---------------- Uploaded!!!!! ----------------"
     end
 
-    def test
-      @image =ImageLog.new
-    end
-
     private
 
     def rename_image(images)
