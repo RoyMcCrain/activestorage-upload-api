@@ -63,4 +63,4 @@ master.key
 log/capistrano.log
 debug.log
 erd.pdf
-log/test.log
+log
