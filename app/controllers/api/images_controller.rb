@@ -28,6 +28,7 @@ module Api
       # TODO: Create validation for gcs connection
     end
 
+    # 拡張子よりもRubyのFile.extnameメソッドでチェックする
     def ext_validate
       file_names = params[:images].map(&:original_filename)
       ext_allowlist = [".png", ".jpg", ".jpeg", ".gif"]
@@ -42,6 +43,7 @@ module Api
     # "image/"でバリデーションするのはあまり意味がない（改竄可能）なので
     # マジックバイトを検証する
     def mime_validate
+      # 47494638=GIF, ffd8ffe0=JPEG, 89504e47=PNG
       magic_list = ["47494638", "ffd8ffe0", "89504e47"]
       params[:images].each do |i|
         file = File.new(i, "r")
