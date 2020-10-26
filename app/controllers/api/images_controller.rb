@@ -43,7 +43,7 @@ module Api
     # "image/"でバリデーションするのはあまり意味がない（改竄可能）なので
     # マジックバイトを検証する
     def mime_validate
-      # 47494638=GIF, ffd8ffe0=JPEG, 89504e47=PNG
+      # binary : 47494638=GIF, ffd8ffe0=JPEG, 89504e47=PNG
       magic_list = ["47494638", "ffd8ffe0", "89504e47"]
       params[:images].each do |i|
         file = File.new(i, "r")
