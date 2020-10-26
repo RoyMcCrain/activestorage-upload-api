@@ -14,8 +14,6 @@ RSpec.describe "ImageUploadAPI", type: :request do
   let(:req) { post "/api/images/upload", params: { images: images } }
   let(:init_count) { ImageLog.count }
 
-# TODO: add spec
-
   context "画像アップロードAPIにリクエストしたとき" do
     xit "データが作成されている" do
       is_asserted_by { ImageLog.count == init_count }
@@ -25,6 +23,11 @@ RSpec.describe "ImageUploadAPI", type: :request do
 
     xit "ステータス200が返る" do
       is_asserted_by { response.status == 200 }
+    end
+  end
+
+  context "不正なファイルをアップロードしたとき" do
+    it "エラーメッセージが返る" do
     end
   end
 end

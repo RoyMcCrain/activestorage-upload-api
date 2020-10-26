@@ -1,9 +1,10 @@
 module Api
   class ImagesController < ApplicationController
     def upload
-      ext_validate(params[:images])
+      ext_validate
+      mime_validate
       image_log = ImageLog.create!(uploaded_at: Time.zone.now)
-      rename_image(params[:images])
+      rename_image
       image_log.images.attach(params[:images])
 
       render json: {
@@ -17,8 +18,8 @@ module Api
 
     private
 
-    def rename_image(images)
-      images.each do |image|
+    def rename_image
+      params[:images].each do |image|
         image.original_filename = "#{SecureRandom.uuid}.jpg"
       end
     end
@@ -27,13 +28,28 @@ module Api
       # TODO: Create validation for gcs connection
     end
 
-    def ext_validate(images)
-      file_names = images.map(&:original_filename)
+    def ext_validate
+      file_names = params[:images].map(&:original_filename)
       ext_allowlist = [".png", ".jpg", ".jpeg", ".gif"]
 
       file_names.each do |v|
         if ext_allowlist.exclude?(File.extname(v))
           raise "Invalid extension."
+        end
+      end
+    end
+
+    # "image/"でバリデーションするのはあまり意味がない（改竄可能）なので
+    # マジックバイトを検証する
+    def mime_validate
+      magic_list = ["47494638", "ffd8ffe0", "89504e47"]
+      params[:images].each do |i|
+        file = File.new(i, "r")
+        data = file.read(4)
+        file.close
+        # 　　　　　　　　　   　　　data.unpack("H8")[0]と同じ
+        if magic_list.exclude?(data.unpack1("H8"))
+          raise "Invalid format."
         end
       end
     end
