@@ -43,7 +43,7 @@ showは未実装
 {"url":["https://storage.cloud.google.com/acst-bucket/yqgnqrc1fc01u8ci5bkmkk14dlmd","https://storage.cloud.google.com/acst-bucket/16t2an2vaponp8bnl0146czwjpo5"]}
 ~~~
 
-### それ以外の拡張子を送信するとエラーメッセージ
+### それ以外の拡張子を送信すると200でエラーメッセージ
 
 異常：返り値サンプル
 
