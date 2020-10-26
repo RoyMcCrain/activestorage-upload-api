@@ -19,7 +19,7 @@ guard :brakeman, run_on_start: true do
   watch(%r{^app/.+\.(erb|haml|rhtml|rb)$})
   watch(%r{^config/.+\.rb$})
   watch(%r{^lib/.+\.rb$})
-  watch('Gemfile')
+  watch("Gemfile")
 end
 
 # Note: The cmd option is now required due to the increasing number of ways
@@ -48,7 +48,7 @@ guard :rspec, cmd: "bundle exec rspec" do
   dsl.watch_spec_files_for(ruby.lib_files)
 
   # Rails files
-  rails = dsl.rails(view_extensions: %w(erb haml slim))
+  rails = dsl.rails(view_extensions: %w[erb haml slim])
   dsl.watch_spec_files_for(rails.app_files)
   dsl.watch_spec_files_for(rails.views)
 
@@ -56,7 +56,7 @@ guard :rspec, cmd: "bundle exec rspec" do
     [
       rspec.spec.call("routing/#{m[1]}_routing"),
       rspec.spec.call("controllers/#{m[1]}_controller"),
-      rspec.spec.call("acceptance/#{m[1]}")
+      rspec.spec.call("acceptance/#{m[1]}"),
     ]
   end
 
