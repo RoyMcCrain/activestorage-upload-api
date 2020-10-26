@@ -481,3 +481,155 @@ Completed 500 Internal Server Error in 994730ms (ActiveRecord: 2.2ms | Allocatio
   [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:03:38 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000561c4d23e050>", "#<ActionDispatch::Http::UploadedFile:0x0000561c4d23dee8>"]}
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:03:54 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000560a29837988>", "#<ActionDispatch::Http::UploadedFile:0x0000560a298377f8>"]}
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:03:57 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x000055583c3e1db0>", "#<ActionDispatch::Http::UploadedFile:0x000055583c3e1ba8>"]}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:04:21 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000556716bbd938>", "#<ActionDispatch::Http::UploadedFile:0x0000556716bbd758>"]}
+Completed 200 OK in 9ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:04:45 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x000055c660ab0dc0>", "#<ActionDispatch::Http::UploadedFile:0x000055c660ab0cd0>"]}
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:05:00 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000557d06f854e8>", "#<ActionDispatch::Http::UploadedFile:0x0000557d06f853f8>"]}
+Completed 200 OK in 9ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1381)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:05:18 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000562fce5e80e0>", "#<ActionDispatch::Http::UploadedFile:0x0000562fce603d40>"]}
+Completed 200 OK in 17486ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151018)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:06:12 +0900
+Processing by Api::ImagesController#upload as JSON
+  Parameters: {"images"=>[{"tempfile"=>"spec/fixtures/files/test_fire.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}, {"tempfile"=>"spec/fixtures/files/test_mini.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}], "image"=>{"images"=>[{"tempfile"=>"spec/fixtures/files/test_fire.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}, {"tempfile"=>"spec/fixtures/files/test_mini.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}]}}
+Completed 200 OK in 143197ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 644441)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:10:18 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x0000559570e89c60>", "#<ActionDispatch::Http::UploadedFile:0x0000559570e89b70>"]}
+Completed 200 OK in 95741ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 77534)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:11:55 +0900
+Processing by Api::ImagesController#upload as HTML
+  Parameters: {"images"=>["#<ActionDispatch::Http::UploadedFile:0x000055e7495f3328>", "#<ActionDispatch::Http::UploadedFile:0x000055e7495f31c0>"]}
+Completed 200 OK in 4085ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 60913)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "image_logs"[0m
+Started POST "/api/images/upload" for 127.0.0.1 at 2020-10-26 16:12:07 +0900
+Processing by Api::ImagesController#upload as JSON
+  Parameters: {"images"=>[{"tempfile"=>"spec/fixtures/files/test_fire.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}, {"tempfile"=>"spec/fixtures/files/test_mini.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}], "image"=>{"images"=>[{"tempfile"=>"spec/fixtures/files/test_fire.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}, {"tempfile"=>"spec/fixtures/files/test_mini.jpg", "original_filename"=>nil, "content_type"=>"image/jpg", "headers"=>nil}]}}

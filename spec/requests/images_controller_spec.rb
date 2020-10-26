@@ -1,23 +1,29 @@
 require "rails_helper"
 
 RSpec.describe "ImageUploadAPI", type: :request do
-  include Rack::Test::Methods
-  include ActionDispatch::TestProcess
-
   let(:images) do
     [
-      File.open("spec/fixtures/files/test_fire.jpg"),
-      File.open("spec/fixtures/files/test_mini.jpg"),
+      ActionDispatch::Http::UploadedFile.new(
+        original_filename:  "test_fire.jpg",
+        type:               "image/jpg",
+        tempfile:           "spec/fixtures/files/test_fire.jpg",
+      ),
+      ActionDispatch::Http::UploadedFile.new(
+        original_filename:  "test_mini.jpg",
+        type:               "image/jpg",
+        tempfile:           "spec/fixtures/files/test_mini.jpg",
+      ),
     ]
   end
 
-  let(:req) { post "/api/images/upload", params: { images: images } }
+  let(:req) { post "/api/images/upload", params: { images: images }, as: :json }
   let(:init_count) { ImageLog.count }
 
   context "画像アップロードAPIにリクエストしたとき" do
     xit "データが作成されている" do
       is_asserted_by { ImageLog.count == init_count }
-      req.set_form(images, "multipart/form-data")
+      req
+      # req.set_form(images, "multipart/form-data")
       is_asserted_by { ImageLog.count == init_count + 1 }
     end
 

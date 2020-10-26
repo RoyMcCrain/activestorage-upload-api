@@ -47,6 +47,7 @@ group :development do
   gem "guard"
   gem "guard-rspec", require: false
   gem "guard-brakeman"
+  gem "factory_bot_rails"
   # capistrano
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rbenv", "~> 2.2", require: false
