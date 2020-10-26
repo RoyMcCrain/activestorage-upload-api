@@ -28,7 +28,7 @@ module Api
       # TODO: Create validation for gcs connection
     end
 
-    # 拡張子よりもRubyのFile.extnameメソッドでチェックする
+    # 正規表現よりもRubyのFile.extnameメソッドでチェックする
     def ext_validate
       file_names = params[:images].map(&:original_filename)
       ext_allowlist = [".png", ".jpg", ".jpeg", ".gif"]
