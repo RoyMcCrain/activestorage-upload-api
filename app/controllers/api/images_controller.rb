@@ -30,7 +30,6 @@ module Api
 
     # 拡張子よりもRubyのFile.extnameメソッドでチェックする
     def ext_validate
-      binding.irb
       file_names = params[:images].map(&:original_filename)
       ext_allowlist = [".png", ".jpg", ".jpeg", ".gif"]
 
