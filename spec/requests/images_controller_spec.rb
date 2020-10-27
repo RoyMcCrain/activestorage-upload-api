@@ -23,7 +23,6 @@ RSpec.describe "ImageUploadAPI", type: :request do
       req
       is_asserted_by { ActiveStorage::Attachment.count == init_count + 2 }
     end
-
     it "ステータス200が返る" do
       req
       is_asserted_by { response.status == 200 }
@@ -43,14 +42,19 @@ RSpec.describe "ImageUploadAPI", type: :request do
         ),
       ]
     end
-    it "ステータス200が返る" do
+    it "データは作成されていない" do
+      is_asserted_by { ActiveStorage::Attachment.count == init_count }
       req
-      is_asserted_by { response.status == 200 }
+      is_asserted_by { ActiveStorage::Attachment.count == init_count }
     end
     it "エラーメッセージが返る" do
       req
       json = json_parser(response.body)
       is_asserted_by { json[:error] == "Invalid extension."}
+    end
+    it "ステータス200が返る" do
+      req
+      is_asserted_by { response.status == 200 }
     end
   end
 end
