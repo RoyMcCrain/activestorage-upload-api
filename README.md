@@ -5,6 +5,9 @@
 ### Model
 
 - image_log uploaded_at:datetime
+
+↑これ、postsがいい
+
 - ActiveStorage::attachments
 - ActiveStorage::blobs
 
